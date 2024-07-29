@@ -38,6 +38,7 @@ public class PeopleController {
     @ResponseStatus(HttpStatus.CREATED)
     public Person create(@RequestBody Person person) {
         return personRepository.save(person);
+
     }
 
     @DeleteMapping(path = "/{id}")
